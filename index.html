@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="navbar.css" />
+        <link rel="stylesheet" href="top.css">
+        <link rel="stylesheet" href="mobile.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<title>Hw2</title>
+	</head>
+	<body>
+		<!-- The overlay -->
+		<div id="myNav" class="overlay">
+			<!-- Overlay content -->
+			<div class="overlay-content">
+				<a onclick="navClick(0)">Logo</a>
+				<a onclick="navClick(1)">關於我們</a>
+				<a onclick="navClick(2)">XXX</a>
+				<a onclick="navClick(3)">加入我們</a>
+			</div>
+		</div>
+
+		<!-- Use any element to open/show the overlay navigation menu -->
+		<div class="container" onclick="myFunction(this)">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+		</div>
+
+		<section class="logo title">
+			<div>
+				<h1>Here <br />is <br />Logo</h1>
+			</div>
+
+			<p>here will be a products cover</p>
+		</section>
+
+		<section class="feature title">
+			<h1>Feature</h1>
+			<div class="memory">
+				<h2>保存回憶</h2>
+				<p>與我們分享你的生活，記錄生活的每一個精彩瞬間</p>
+				<div class="icon">
+					<img src="./icon/book_1.png" alt="book" />
+					<img src="./icon/love_1.png" alt="love" />
+					<img src="./icon/pencil_1.png" alt="pencil" />
+					<img src="./icon/people_1.png" alt="people" />
+				</div>
+			</div>
+		</section>
+
+		<section class="qty title">
+			<h1 class="title">現在我們...</h1>
+			<div class="row">
+				<div class="user qty-block">
+					<img src="./icon/user.png" alt="user" />
+					<div>
+						<h2>Users</h2>
+						<p>超過ＸＸ位使用者</p>
+					</div>
+				</div>
+				<div class="couple qty-block">
+					<img src="./icon/couple-silhouette.png" alt="couple" />
+					<div>
+						<h2>Couples</h2>
+						<p>ＷＷ對的情侶正在使用</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="post qty-block">
+					<img src="./icon/book_2.png" alt="post" />
+					<div>
+						<h2>Post</h2>
+						<p>總計ＹＹ篇的貼文</p>
+					</div>
+				</div>
+				<div class="graffiti qty-block">
+					<img src="./icon/pencil_2.png" alt="graffiti" />
+					<div>
+						<h2>Graffiti</h2>
+						<p>ＺＺ位擁有個人塗鴉板</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="hot title">
+			<h1 class="title">熱門貼文</h1>
+			<div class="hot-row">
+				<div class="post-block">
+					<div class="img-sm">
+						<img src="./icon/user.png" alt="user" />
+						<p>user100</p>
+					</div>
+					<div class="img-l">
+						<img src="./img/couple.jpg" alt="couple" />
+					</div>
+					<div class="img-sm">
+						<img src="./icon/love_2.png" alt="love" />
+						<p>100</p>
+						<img src="./icon/people_2.png" alt="people" />
+						<p>5000</p>
+					</div>
+				</div>
+				<div class="post-block">
+					<div class="img-sm">
+						<img src="./icon/user.png" alt="user" />
+						<p>user100</p>
+					</div>
+					<div class="img-l">
+						<img src="./img/couple.jpg" alt="couple" />
+					</div>
+					<div class="img-sm">
+						<img src="./icon/love_2.png" alt="love" />
+						<p>100</p>
+						<img src="./icon/people_2.png" alt="people" />
+						<p>5000</p>
+					</div>
+				</div>
+			</div>
+			<div class="hot-row">
+				<div class="post-block">
+					<div class="img-sm">
+						<img src="./icon/user.png" alt="user" />
+						<p>user100</p>
+					</div>
+					<div class="img-l">
+						<img src="./img/couple.jpg" alt="couple" />
+					</div>
+					<div class="img-sm">
+						<img src="./icon/love_2.png" alt="love" />
+						<p>100</p>
+						<img src="./icon/people_2.png" alt="people" />
+						<p>5000</p>
+					</div>
+				</div>
+				<div class="post-block">
+					<div class="img-sm">
+						<img src="./icon/user.png" alt="user" />
+						<p>user100</p>
+					</div>
+					<div class="img-l">
+						<img src="./img/couple.jpg" alt="couple" />
+					</div>
+					<div class="img-sm">
+						<img src="./icon/love_2.png" alt="love" />
+						<p>100</p>
+						<img src="./icon/people_2.png" alt="people" />
+						<p>5000</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+
+            <div id="toTop">
+                <p>Go Top</p>
+            </div>
+			<div class="footer-row">
+				<div class="footer-link">
+					<h3>關於我們</h3>
+					<a href="#">產品特色</a>
+					<a href="#">產品使用概況</a>
+				</div>
+				<div class="footer-link">
+					<h3>系統功能</h3>
+					<a href="#">貼文一覽</a>
+					<a href="#">塗鴉牆</a>
+					<a href="#">情侶分享</a>
+				</div>
+			</div>
+			<div class="footer-row">
+				<p>Copyright 2022 .... All Rights Reserved</p>
+			</div>
+
+
+			<!-- <p>thanks to:</p>
+			<a href="https://www.flaticon.com/free-icons/love" title="love icons"
+				>Love icons created by Freepik - Flaticon</a
+			>
+			<br />
+			<a href="https://www.flaticon.com/free-icons/people" title="people icons"
+				>People icons created by Vitaly Gorbachev - Flaticon</a
+			>
+			<br />
+			<a href="https://www.flaticon.com/free-icons/pencil" title="pencil icons"
+				>Pencil icons created by Freepik - Flaticon</a
+			>
+			<br />
+			<a href="https://www.flaticon.com/free-icons/book" title="book icons"
+				>Book icons created by Freepik - Flaticon</a
+			>
+			<br />
+			<a href="https://www.flaticon.com/free-icons/user" title="user icons"
+				>User icons created by Freepik - Flaticon</a
+			>
+			<br />
+			<a href="https://www.flaticon.com/free-icons/couple" title="couple icons"
+				>Couple icons created by Freepik - Flaticon</a
+			> -->
+		</footer>
+		<script src="app.js"></script>
+	</body>
+</html>

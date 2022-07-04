@@ -1,0 +1,17 @@
+/* 參考自 https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
+#toTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0 2rem;
+	cursor: pointer; /* Add a mouse pointer on hover */
+}
+
+#toTop p{
+    justify-content: center;
+    align-items: center;
+}
+
+#toTop:hover {
+	background-color: #7c7c7c; /* Add a dark-grey background on hover */
+}
