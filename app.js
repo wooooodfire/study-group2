@@ -1,12 +1,24 @@
 // nav
 function myFunction(x) {
 	x.classList.toggle('change');
-    if(document.getElementById('myNav').style.width === '30%'){
-        document.getElementById('myNav').style.width = '0%';
+    const windowWidth = window.innerWidth;
+    if(windowWidth > 715){
+        if(document.getElementById('myNav').style.width === '30%'){
+            document.getElementById('myNav').style.width = '0%';
+        }
+        else if(document.getElementById('myNav').style.width = '0%'){
+            document.getElementById('myNav').style.width = '30%';
+        }
     }
-    else if(document.getElementById('myNav').style.width = '0%'){
-        document.getElementById('myNav').style.width = '30%';
+    else{
+        if(document.getElementById('myNav').style.width === '50%'){
+            document.getElementById('myNav').style.width = '0%';
+        }
+        else if(document.getElementById('myNav').style.width = '0%'){
+            document.getElementById('myNav').style.width = '50%';
+        }
     }
+
 }
 
 // top
