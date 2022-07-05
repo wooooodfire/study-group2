@@ -33,6 +33,7 @@
 	color: #818181;
 	display: block; /* Display block instead of inline */
 	transition: 0.3s; /* Transition effects on hover (color) */
+    cursor: pointer;
 }
 
 /* When you mouse over the navigation links, change their color */

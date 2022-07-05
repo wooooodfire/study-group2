@@ -6,15 +6,22 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
 		<link rel="stylesheet" href="navbar.css" />
-        <link rel="stylesheet" href="top.css">
-        <link rel="stylesheet" href="mobile.css">
+		<link rel="stylesheet" href="top.css" />
+		<link rel="stylesheet" href="mobile.css" />
+        <link rel="stylesheet" href="scroll.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&display=swap"
 			rel="stylesheet"
 		/>
-
+		<!-- <script
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"
+		></script> -->
+		<script src="//code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 		<title>Hw2</title>
 	</head>
 	<body>
@@ -59,118 +66,117 @@
 		</section>
 
 		<section class="qty title">
-			<h1 class="title">現在我們...</h1>
-			<div class="row">
-				<div class="user qty-block">
-					<img src="./icon/user.png" alt="user" />
-					<div>
-						<h2>Users</h2>
-						<p>超過ＸＸ位使用者</p>
+			<h1>現在我們...</h1>
+			<div class="col-container">
+				<div class="col-left ">
+					<div class="user qty-block qty-l js-scroll slide-left" id="a">
+						<img src="./icon/user.png" alt="user" />
+						<div>
+							<h2>Users</h2>
+							<p>超過ＸＸ位使用者</p>
+						</div>
+					</div>
+					<div class="post qty-block qty-l js-scroll slide-left">
+						<img src="./icon/book_2.png" alt="post" />
+						<div>
+							<h2>Post</h2>
+							<p>總計ＹＹ篇的貼文</p>
+						</div>
 					</div>
 				</div>
-                <hr>
-				<div class="couple qty-block">
-					<img src="./icon/couple-silhouette.png" alt="couple" />
-					<div>
-						<h2>Couples</h2>
-						<p>ＷＷ對的情侶正在使用</p>
+				<div class="col-right">
+					<div class="couple qty-block qty-r js-scroll slide-right">
+						<img src="./icon/couple-silhouette.png" alt="couple" />
+						<div>
+							<h2>Couples</h2>
+							<p>ＷＷ對的情侶正在使用</p>
+						</div>
 					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="post qty-block">
-					<img src="./icon/book_2.png" alt="post" />
-					<div>
-						<h2>Post</h2>
-						<p>總計ＹＹ篇的貼文</p>
-					</div>
-				</div>
-                <hr>
-				<div class="graffiti qty-block">
-					<img src="./icon/pencil_2.png" alt="graffiti" />
-					<div>
-						<h2>Graffiti</h2>
-						<p>ＺＺ位擁有個人塗鴉板</p>
+					<div class="graffiti qty-block qty-r js-scroll slide-right">
+						<img src="./icon/pencil_2.png" alt="graffiti" />
+						<div>
+							<h2>Graffiti</h2>
+							<p>ＺＺ位擁有個人塗鴉板</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="hot title">
-			<h1 class="title">熱門貼文</h1>
-			<div class="hot-row">
-				<div class="post-block">
-					<div class="img-sm">
-						<img src="./icon/user.png" alt="user" />
-						<p>user100</p>
+		<section class="title hot">
+			<h1>熱門貼文</h1>
+			<div class="col-container">
+				<div class="col-left post-block-right" id="b">
+					<div class="post-block post-block-left js-scroll slide-left">
+						<div class="img-sm">
+							<img src="./icon/user.png" alt="user" />
+							<p>user99</p>
+						</div>
+						<div class="img-l">
+							<img src="./img/couple.jpg" alt="couple" />
+						</div>
+						<div class="img-sm">
+							<img src="./icon/love_2.png" alt="love" />
+							<p>100</p>
+							<img src="./icon/people_2.png" alt="people" />
+							<p>5000</p>
+						</div>
 					</div>
-					<div class="img-l">
-						<img src="./img/couple.jpg" alt="couple" />
-					</div>
-					<div class="img-sm">
-						<img src="./icon/love_2.png" alt="love" />
-						<p>100</p>
-						<img src="./icon/people_2.png" alt="people" />
-						<p>5000</p>
-					</div>
-				</div>
-                <hr>
-				<div class="post-block">
-					<div class="img-sm">
-						<img src="./icon/user.png" alt="user" />
-						<p>user100</p>
-					</div>
-					<div class="img-l">
-						<img src="./img/couple.jpg" alt="couple" />
-					</div>
-					<div class="img-sm">
-						<img src="./icon/love_2.png" alt="love" />
-						<p>100</p>
-						<img src="./icon/people_2.png" alt="people" />
-						<p>5000</p>
-					</div>
-				</div>
-			</div>
-			<div class="hot-row">
-				<div class="post-block">
-					<div class="img-sm">
-						<img src="./icon/user.png" alt="user" />
-						<p>user100</p>
-					</div>
-					<div class="img-l">
-						<img src="./img/couple.jpg" alt="couple" />
-					</div>
-					<div class="img-sm">
-						<img src="./icon/love_2.png" alt="love" />
-						<p>100</p>
-						<img src="./icon/people_2.png" alt="people" />
-						<p>5000</p>
+					<div class="post-block post-block-left js-scroll slide-left">
+						<div class="img-sm">
+							<img src="./icon/user.png" alt="user" />
+							<p>user98</p>
+						</div>
+						<div class="img-l">
+							<img src="./img/couple.jpg" alt="couple" />
+						</div>
+						<div class="img-sm">
+							<img src="./icon/love_2.png" alt="love" />
+							<p>100</p>
+							<img src="./icon/people_2.png" alt="people" />
+							<p>5000</p>
+						</div>
 					</div>
 				</div>
-                <hr>
-				<div class="post-block">
-					<div class="img-sm">
-						<img src="./icon/user.png" alt="user" />
-						<p>user100</p>
+				<div class="col-right">
+					<div class="post-block post-block-right js-scroll slide-right">
+						<div class="img-sm">
+							<img src="./icon/user.png" alt="user" />
+							<p>user100</p>
+						</div>
+						<div class="img-l">
+							<img src="./img/couple.jpg" alt="couple" />
+						</div>
+						<div class="img-sm">
+							<img src="./icon/love_2.png" alt="love" />
+							<p>100</p>
+							<img src="./icon/people_2.png" alt="people" />
+							<p>5000</p>
+						</div>
 					</div>
-					<div class="img-l">
-						<img src="./img/couple.jpg" alt="couple" />
-					</div>
-					<div class="img-sm">
-						<img src="./icon/love_2.png" alt="love" />
-						<p>100</p>
-						<img src="./icon/people_2.png" alt="people" />
-						<p>5000</p>
+					<div class="post-block post-block-right js-scroll slide-right">
+						<div class="img-sm">
+							<img src="./icon/user.png" alt="user" />
+							<p>user100</p>
+						</div>
+						<div class="img-l">
+							<img src="./img/couple.jpg" alt="couple" />
+						</div>
+						<div class="img-sm">
+							<img src="./icon/love_2.png" alt="love" />
+							<p>100</p>
+							<img src="./icon/people_2.png" alt="people" />
+							<p>5000</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
 		<footer>
-
-            <div id="toTop">
-                <p>Go Top</p>
-            </div>
+			<div id="toTop">
+				<p>Go Top</p>
+			</div>
 			<div class="footer-row">
 				<div class="footer-link">
 					<h3>關於我們</h3>
@@ -187,7 +193,6 @@
 			<div class="footer-row">
 				<p>Copyright 2022 .... All Rights Reserved</p>
 			</div>
-
 
 			<!-- <p>thanks to:</p>
 			<a href="https://www.flaticon.com/free-icons/love" title="love icons"

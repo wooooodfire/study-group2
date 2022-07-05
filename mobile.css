@@ -17,16 +17,34 @@
 		margin: 0 0.5rem;
 	}
 
-	.hot-row hr,
-	.row hr {
-		display: block;
-	}
+
 	.qty {
-		height: 60rem;
+		height: 40rem;
 	}
 	.hot {
-		height: 95rem;
+		height: 75rem;
 	}
+
+    .col-left, .col-right{
+        float:none;
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .col-left 
+    .qty-l{
+        justify-content: flex-start;
+    }
+    .qty-block{
+        margin:1rem;
+    }
+
+    .post-block {
+        margin:1rem;
+        width: 15rem;
+    }
+
 
 	.footer-link:nth-child(1) {
 		margin: 3rem 2rem 5rem 0;
@@ -35,4 +53,6 @@
 	.footer-link:nth-child(2) {
 		margin: 3rem 0 5rem 2rem;
 	}
+
+
 }
