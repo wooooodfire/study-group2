@@ -13,6 +13,8 @@ h1 {
 	font-weight: 700;
 }
 
+/* ------logo------ */
+
 .logo {
 	background-image: url('./img/cover.jpg');
 	height: 40rem;
@@ -32,6 +34,8 @@ h1 {
 	margin-top: 5em;
 	color: white;
 }
+
+/* ------feature------ */
 
 .feature {
 	height: 30rem;
@@ -58,6 +62,7 @@ h1 {
 	height: 35rem;
 	width: 70vw;
 	color: white;
+	transition: all 1s ease-in;
 }
 
 .memory h2 {
@@ -77,14 +82,35 @@ h1 {
 	margin-top: 15rem;
 }
 
+
 .icon img {
 	max-width: 3rem;
 	margin: 0 0.5rem;
+    filter: invert(50%) sepia(80%) saturate(3.5);
+    cursor: pointer;
 }
 
+.feature-selected{
+    filter: invert(80%) sepia(100%) saturate(3.5) !important;
+    transition: all 0.1s ease-in-out;
+}
 
-/* -------- */
+/* ------col-container------ */
 
+.col-container {
+	display: block;
+}
+
+.col-left {
+	float: left;
+	width: 50%;
+}
+.col-right {
+	float: right;
+	width: 50%;
+}
+
+/* ------qty------ */
 
 .qty {
 	height: 37rem;
@@ -97,21 +123,8 @@ h1 {
 	text-align: center;
 }
 
-.col-container{
-    display: block;
-}
-
-.col-left{
-    float:left;
-    width: 50%;
-}
-.col-right{
-    float: right;
-    width: 50%;
-}
-
-.qty-block-left{
-    justify-content: flex-end;
+.qty-block-left {
+	justify-content: flex-end;
 }
 
 .qty-block {
@@ -121,8 +134,9 @@ h1 {
 
 .qty-block img {
 	width: 3rem;
-    height: 3rem;
+	height: 3rem;
 	margin: 1rem;
+    
 }
 
 .qty-block h2 {
@@ -133,14 +147,12 @@ h1 {
 	margin: 0.5rem;
 }
 
-/* -------- */
-
+/* ------post------ */
 
 .hot {
 	height: 50rem;
 	background-color: #85cda2;
 }
-
 
 .hot h1 {
 	font-weight: 500;
@@ -150,14 +162,18 @@ h1 {
 
 .post-block {
 	box-shadow: 0 0 20px #00000040;
-    margin:1rem 3rem 1rem;
-    width: 20rem;
+	margin: 1rem 3rem 1rem;
+	width: 20rem;
 	border-radius: 5%;
 }
 
-.post-block-left{
-    margin-left: auto; 
-    margin-right: 0;
+.post-block-left {
+	margin-left: auto;
+	margin-right: 2rem;
+}
+.post-block-right {
+	margin-right: auto;
+	margin-left: 2rem;
 }
 
 .img-sm {
@@ -174,12 +190,12 @@ h1 {
 }
 
 .img-l img {
-    height:100%;
-    width: 100%;
-    object-fit: contain;
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
 }
 
-/* ------- */
+/* ------footer------ */
 
 footer {
 	background-color: #9c9c9c;
@@ -218,4 +234,3 @@ footer h3 {
 .footer-row:nth-child(3) {
 	padding: 0 0 3rem;
 }
-

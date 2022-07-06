@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="navbar.css" />
 		<link rel="stylesheet" href="top.css" />
 		<link rel="stylesheet" href="mobile.css" />
-        <link rel="stylesheet" href="scroll.css">
+		<link rel="stylesheet" href="scroll.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -50,10 +50,10 @@
 				<h2>保存回憶</h2>
 				<p>與我們分享你的生活，記錄生活的每一個精彩瞬間</p>
 				<div class="icon">
-					<img src="./icon/book_1.png" alt="book" />
-					<img src="./icon/love_1.png" alt="love" />
-					<img src="./icon/pencil_1.png" alt="pencil" />
-					<img src="./icon/people_1.png" alt="people" />
+                    <img src="./icon/love-svg.svg" alt="love" class="feature-icon" id="icon-memory" />
+					<img src="./icon/couple-svg.svg" alt="couple" class="feature-icon" id="icon-couple" />
+                    <img src="./icon/spray-svg.svg" alt="graffiti" class="feature-icon" id="icon-graffiti" />
+                    <img src="./icon/share-svg.svg" alt="share" class="feature-icon" id="icon-share" >
 				</div>
 			</div>
 		</section>
@@ -62,15 +62,15 @@
 			<h1>現在我們...</h1>
 			<div class="col-container">
 				<div class="col-left js-scroll slide-left">
-					<div class="qty-block qty-block-left ">
+					<div class="qty-block qty-block-left">
 						<img src="./icon/user.png" alt="user" />
 						<div>
 							<h2>Users</h2>
 							<p>超過ＸＸ位使用者</p>
 						</div>
 					</div>
-					<div class="qty-block qty-block-left ">
-						<img src="./icon/book_2.png" alt="post" />
+					<div class="qty-block qty-block-left">
+						<img src="./icon/book.png" alt="post" />
 						<div>
 							<h2>Post</h2>
 							<p>總計ＹＹ篇的貼文</p>
@@ -79,14 +79,14 @@
 				</div>
 				<div class="col-right js-scroll slide-right">
 					<div class="qty-block">
-						<img src="./icon/couple-silhouette.png" alt="couple" />
+						<img src="./icon/couple-qty.png" alt="couple" />
 						<div>
 							<h2>Couples</h2>
 							<p>ＷＷ對的情侶正在使用</p>
 						</div>
 					</div>
 					<div class="qty-block">
-						<img src="./icon/pencil_2.png" alt="graffiti" />
+						<img src="./icon/pencil.png" alt="graffiti" />
 						<div>
 							<h2>Graffiti</h2>
 							<p>ＺＺ位擁有個人塗鴉板</p>
@@ -109,9 +109,9 @@
 							<img src="./img/couple.jpg" alt="couple" />
 						</div>
 						<div class="img-sm">
-							<img src="./icon/love_2.png" alt="love" />
+							<img src="./icon/love.png" alt="love" />
 							<p>100</p>
-							<img src="./icon/people_2.png" alt="people" />
+							<img src="./icon/people.png" alt="people" />
 							<p>5000</p>
 						</div>
 					</div>
@@ -124,15 +124,15 @@
 							<img src="./img/couple.jpg" alt="couple" />
 						</div>
 						<div class="img-sm">
-							<img src="./icon/love_2.png" alt="love" />
+							<img src="./icon/love.png" alt="love" />
 							<p>100</p>
-							<img src="./icon/people_2.png" alt="people" />
+							<img src="./icon/people.png" alt="people" />
 							<p>5000</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-right js-scroll slide-right">
-					<div class="post-block ">
+					<div class="post-block post-block-right">
 						<div class="img-sm">
 							<img src="./icon/user.png" alt="user" />
 							<p>user100</p>
@@ -141,13 +141,13 @@
 							<img src="./img/couple.jpg" alt="couple" />
 						</div>
 						<div class="img-sm">
-							<img src="./icon/love_2.png" alt="love" />
+							<img src="./icon/love.png" alt="love" />
 							<p>100</p>
-							<img src="./icon/people_2.png" alt="people" />
+							<img src="./icon/people.png" alt="people" />
 							<p>5000</p>
 						</div>
 					</div>
-					<div class="post-block">
+					<div class="post-block post-block-right">
 						<div class="img-sm">
 							<img src="./icon/user.png" alt="user" />
 							<p>user100</p>
@@ -156,9 +156,9 @@
 							<img src="./img/couple.jpg" alt="couple" />
 						</div>
 						<div class="img-sm">
-							<img src="./icon/love_2.png" alt="love" />
+							<img src="./icon/love.png" alt="love" />
 							<p>100</p>
-							<img src="./icon/people_2.png" alt="people" />
+							<img src="./icon/people.png" alt="people" />
 							<p>5000</p>
 						</div>
 					</div>
@@ -168,7 +168,7 @@
 
 		<footer>
 			<div id="toTop">
-				<p>Go Top</p>
+				<p>Go to top</p>
 			</div>
 			<div class="footer-row">
 				<div class="footer-link">
@@ -186,7 +186,6 @@
 			<div class="footer-row">
 				<p>Copyright 2022 .... All Rights Reserved</p>
 			</div>
-
 			<!-- <p>thanks to:</p>
 			<a href="https://www.flaticon.com/free-icons/love" title="love icons"
 				>Love icons created by Freepik - Flaticon</a
