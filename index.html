@@ -15,6 +15,21 @@
 			href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&display=swap"
 			rel="stylesheet"
 		/>
+        <!-- preload img 參考自 https://www.mediacollege.com/internet/javascript/image/preload.html -->
+		<script type="text/javascript">
+			if (document.images) {
+				img1 = new Image();
+				img1.src = 'img/couple.jpg';
+				img2 = new Image();
+				img2.src = 'img/cover.jpg';
+				img3 = new Image();
+				img3.src = 'img/graffiti.jpg';
+				img4 = new Image();
+				img4.src = 'img/memory.jpg';
+				img5 = new Image();
+				img5.src = 'img/share.jpg';
+			}
+		</script>
 		<title>Hw2</title>
 	</head>
 	<body>
@@ -50,10 +65,10 @@
 				<h2>保存回憶</h2>
 				<p>與我們分享你的生活，記錄生活的每一個精彩瞬間</p>
 				<div class="icon">
-                    <img src="./icon/love-svg.svg" alt="love" class="feature-icon" id="icon-memory" />
+					<img src="./icon/love-svg.svg" alt="love" class="feature-icon" id="icon-memory" />
 					<img src="./icon/couple-svg.svg" alt="couple" class="feature-icon" id="icon-couple" />
-                    <img src="./icon/spray-svg.svg" alt="graffiti" class="feature-icon" id="icon-graffiti" />
-                    <img src="./icon/share-svg.svg" alt="share" class="feature-icon" id="icon-share" >
+					<img src="./icon/spray-svg.svg" alt="graffiti" class="feature-icon" id="icon-graffiti" />
+					<img src="./icon/share-svg.svg" alt="share" class="feature-icon" id="icon-share" />
 				</div>
 			</div>
 		</section>
