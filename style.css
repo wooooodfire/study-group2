@@ -104,16 +104,13 @@ h1 {
 .col-left{
     float:left;
     width: 50%;
-    animation: slide-in-left 1s ease-in-out both;
 }
 .col-right{
     float: right;
     width: 50%;
-    animation: slide-in-left 1s ease-in-out both;
-
 }
 
-.qty-l{
+.qty-block-left{
     justify-content: flex-end;
 }
 
